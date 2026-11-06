@@ -18,7 +18,7 @@ spec:
           ports:
             - containerPort: 3000
           securityContext:
-            runAsNonRoot: false
-            privileged: true
-            allowPrivilegeEscalation: true
-            readOnlyRootFilesystem: false
+            runAsNonRoot: true
+            privileged: false
+            allowPrivilegeEscalation: false
+            readOnlyRootFilesystem: true
