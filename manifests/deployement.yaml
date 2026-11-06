@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: desafio-api
-          image: desafio-devsecops02:after
+          image: desafio-devsecops02:secure
           ports:
             - containerPort: 3000
           securityContext:
