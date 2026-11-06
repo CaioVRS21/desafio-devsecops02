@@ -13,7 +13,7 @@ const server = http.createServer((req, res) => {
 
         res.end(JSON.stringify({
             application: message,
-            version: 'before',
+            version: 'tampered',
             status: 'running'
         }));
 
