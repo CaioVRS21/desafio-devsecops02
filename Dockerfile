@@ -1,12 +1,12 @@
 FROM node:24-alpine
 
-WORKDIR /app
+WORKDIR /app/src
 
 COPY app/package*.json ./
 
 RUN npm ci --omit=dev
 
-COPY app/server.js .
+COPY app/src/server.js .
 
 EXPOSE 3000
 
